@@ -1,0 +1,9 @@
+.s-card{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    height: 400px;
+
+}
+.s-img{
+    height: 300px;
+}
