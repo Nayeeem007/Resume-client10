@@ -29,7 +29,7 @@ const router = createBrowserRouter([
       {
         path: '/details/:id',
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader: ({ params }) => fetch(`https://food-server-hamim2001.vercel.app/chef/${params.id}`)
+        loader: ({ params }) => fetch(`https://food-server-nayeeem007.vercel.app/chef/${params.id}`)
       },
       {
         path: '/login',

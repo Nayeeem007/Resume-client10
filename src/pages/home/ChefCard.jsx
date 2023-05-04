@@ -5,7 +5,7 @@ import SingleChef from './SingleChef';
 const ChefCard = () => {
     const [chef,setChef]=useState([])
     useEffect(()=>{
-        fetch('https://food-server-hamim2001.vercel.app/allchef')
+        fetch('https://food-server-nayeeem007.vercel.app/allchef')
         .then(res=>res.json())
         .then(data=>setChef(data))
         
