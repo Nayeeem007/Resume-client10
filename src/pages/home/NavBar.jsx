@@ -30,7 +30,7 @@ const renderTooltip = (props) => (
        <Container>
          <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand className='text-success'>Cooking Master</Navbar.Brand>
+        <Navbar.Brand className='text-success fw-bold fs-1'>Cooking Master</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -53,12 +53,12 @@ const renderTooltip = (props) => (
           </OverlayTrigger> : 
             <img className='rounded-circle p-img mx-3' src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt="" />
           }
-          <NavLink  to="/">Home</NavLink>
-            { user? <Button onClick={handleLogout} className='px-3 mx-3 text-decoration-none' to="/logout">Logout</Button>:
-              <NavLink  to="/login">Login</NavLink>
+          <NavLink className='pe-3 text-decoration-none fw-semibold' to="/">Home</NavLink>
+            { user? <Button onClick={handleLogout} className='px-3 btn-success mx-3 text-decoration-none' to="/logout">Logout</Button>:
+              <NavLink className='pe-3 text-decoration-none fw-semibold' to="/login">Login</NavLink>
             }
-            <NavLink  to="/resister">Resister</NavLink>
-            <button className='mx-3 border rounded  border-none text-decoration-none'><NavLink   to="/blogs">Blogs</NavLink></button>
+            <NavLink className='pe-3 text-decoration-none fw-semibold' to="/resister">Resister</NavLink>
+            <NavLink className='text-decoration-none fw-semibold'  to="/blogs">Blogs</NavLink>
         </Navbar.Collapse>
       </Container>
     </Navbar>
@@ -66,6 +66,4 @@ const renderTooltip = (props) => (
     );
 };
 
-
 export default NavBar;
-
