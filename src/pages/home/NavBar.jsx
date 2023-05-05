@@ -66,4 +66,6 @@ const renderTooltip = (props) => (
     );
 };
 
+
 export default NavBar;
+
